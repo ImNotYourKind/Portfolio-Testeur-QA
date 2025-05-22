@@ -1,0 +1,125 @@
+[
+   
+    {
+        "image": "image3.webp",
+        "title": "Tomsen",
+        "text": "préparer la mise en production d’une application critique en définissant une stratégie de test complète. ",
+        "missions":[
+            {
+              "description": "Analyse détaillée des spécifications fonctionnelles pour identifier les exigences critiques."
+            },
+            {
+              
+              "description": "Conception d’une stratégie de test globale : types de tests, outils, priorisation des cas de test."
+            },
+            {
+             
+              "description": "Planification des tests en mode Agile, alignée avec les sprints de développement."
+            },
+            {
+             
+                "description": "Planification des tests en mode Agile, alignée avec les sprints de développement."
+              }
+        ],
+        "link": "#"
+    },
+    {
+        "image": "724-events.webp",
+        "title": "724Events",
+        "text": "test fonctionnel et exploratoire sur un site web en cours de développement ",
+        "missions":[
+            {
+              "description": "Exécution complète des tests fonctionnels selon le cahier de recettes fourni."
+            },
+            {
+              
+              "description": "Conduite de tests exploratoires pour simuler des comportements réels d’utilisateurs et déceler des anomalies non anticipées."
+            },
+            {
+             
+              "description": "Suivi des anomalies et reporting dans JIRA avec création de tickets de bug clairs, priorisés, illustrés et reproductibles."
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "image": "eco-bliss.webp",
+        "title": "Eco Bliss",
+        "text": "amélioration de la couverture des tests via l’automatisation des scénarios critiques du site web.",
+        "missions":[
+            {
+              "description": "Analyse d’une campagne de tests manuels pour identifier les zones critiques à automatiser."
+            },
+            {
+              
+              "description": "Rédaction de scripts automatisés en JavaScript avec Cypress, incluant les étapes d’interaction utilisateur, les assertions, et la validation de l’UI"
+            },
+            {
+             
+              "description": "Exécution des tests automatisés et rédaction d’un rapport détaillé de la campagne"
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "image": "kasa.webp",
+        "title": "Kasa",
+        "text": "développement front-end d’une application web de location de logements, réalisé en React.",
+        "missions":[
+            {
+              "description": "Développement de composants React réutilisables"
+            },
+            {
+              
+              "description": "Intégration d’API."
+            },
+            {
+             
+              "description": "Responsive design et animations CSS"
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "image": "sophie-bluel.webp",
+        "title": "Sophie Bluel",
+        "text": "Développement d’une interface web dynamique.",
+        "missions":[
+            {
+              "description": "Manipulation du DOM avec JavaScript vanille pour afficher dynamiquement les projets en fonction des interactions."
+            },
+            {
+              
+              "description": "Gestion des événements utilisateurs (clics, filtres, formulaires, drag & drop) pour créer une expérience fluide."
+            },
+            {
+             
+              "description": "Connexion à une API REST pour récupérer, ajouter ou supprimer des médias."
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "image": "resize.jpg",
+        "title": "Menu Maker by Qwenta",
+        "text": "Mise en place et gestion du démarrage d'un projet",
+        "missions":[
+            {
+              "description": "Suivi structuré de l’ensemble des tâches du projet via un tableau Kanban, avec une organisation agile et une mise à jour régulière de l’avancement."
+            },
+            {
+              
+              "description": "Création d’un document détaillé définissant les objectifs, fonctionnalités, contraintes techniques et choix technologiques du projet."
+            },
+            {
+             
+              "description": "Réalisation d’une veille hebdomadaire sur les outils de test, tendances React, bonnes pratiques UX/UI et sécurité, afin d’orienter les choix du projet."
+            },
+            {
+             
+              "description": "Conception d’un support visuel synthétique et professionnel pour présenter le projet, ses enjeux et ses solutions à un public non technique."
+            }
+        ],
+        "link": "#"
+    }
+]

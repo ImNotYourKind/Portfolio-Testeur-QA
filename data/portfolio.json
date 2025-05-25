@@ -21,7 +21,7 @@
                 "description": "Planification des tests en mode Agile, alignée avec les sprints de développement."
               }
         ],
-        "link": "#"
+        "link": "https://github.com/ImNotYourKind/Tomsen"
     },
     {
         "image": "724-events.webp",
@@ -40,7 +40,7 @@
               "description": "Suivi des anomalies et reporting dans JIRA avec création de tickets de bug clairs, priorisés, illustrés et reproductibles."
             }
         ],
-        "link": "#"
+        "link": "https://github.com/ImNotYourKind/724Events"
     },
     {
         "image": "eco-bliss.webp",
@@ -57,9 +57,12 @@
             {
              
               "description": "Exécution des tests automatisés et rédaction d’un rapport détaillé de la campagne"
+            },
+            {
+              "description": "Le lien comprends le site Eco Bliss ainsi que le Rapport de tests en PDF."
             }
         ],
-        "link": "#"
+        "link": "https://github.com/ImNotYourKind/Bliss-Automatisation"
     },
     {
         "image": "kasa.webp",
@@ -78,7 +81,7 @@
               "description": "Responsive design et animations CSS"
             }
         ],
-        "link": "#"
+        "link": "https://github.com/ImNotYourKind/KasaOC"
     },
     {
         "image": "sophie-bluel.webp",
@@ -97,7 +100,7 @@
               "description": "Connexion à une API REST pour récupérer, ajouter ou supprimer des médias."
             }
         ],
-        "link": "#"
+        "link": "https://github.com/ImNotYourKind/Portfolio-architecte-sophie-bluel-master"
     },
     {
         "image": "resize.jpg",
@@ -120,6 +123,6 @@
               "description": "Conception d’un support visuel synthétique et professionnel pour présenter le projet, ses enjeux et ses solutions à un public non technique."
             }
         ],
-        "link": "#"
+        "link": "https://github.com/ImNotYourKind/Menu-Maker"
     }
 ]

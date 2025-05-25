@@ -13,7 +13,7 @@
     {
         "image": "test.webp",
         "title": "Test",
-        "text": "Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test et d’un rédaction d’un cahier de recette, automatisation de tests E2E et d’API"
+        "text": "Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test, rédaction d’un cahier de recette et génération de rapports de test"
     },
     {
         "image": "html-css.png",
@@ -29,6 +29,11 @@
         "image": "react.webp",
         "title": "React",
         "text": "Création d’applications React, création de composants et manipulation de leur état"
+    },
+    {
+        "image": "cypress.webp",
+        "title": "Cypress",
+        "text": "Écriture de tests end-to-end (E2E), simulation complète du comportement d’un utilisateur (clics, scrolls, saisies…), tests des API REST et vérification des réponses JSON, statut HTTP."
     }
 ]
 

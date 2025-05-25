@@ -693,6 +693,11 @@ section h2:hover::after {
     color:#5a5a5a !important ;
 }
 
+.email-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container{

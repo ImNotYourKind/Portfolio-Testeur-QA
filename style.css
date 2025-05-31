@@ -108,7 +108,7 @@ html {
 
 /* Hero Section */
 .bgimage {
-    background-image: url('images/banner.png');
+    background-image: url('images/banner.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -237,7 +237,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/bg1.jpg');
+    background-image: url('images/bg1.webp');
     background-size: cover;
     background-position: center;
     opacity: var(--bg-opacity);
@@ -320,7 +320,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/bg2.jpg');
+    background-image: url('images/bg2.webp');
     background-size: cover;
     background-position: center;
     opacity: var(--bg-opacity);
@@ -512,7 +512,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/bg3.jpg');
+    background-image: url('images/bg3.webp');
     background-size: cover;
     background-position: center;
     opacity: var(--bg-opacity);
@@ -595,7 +595,7 @@ a.btn.button-link {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/bg4.jpg');
+    background-image: url('images/bg4.webp');
     background-size: cover;
     background-position: center;
     opacity: var(--bg-opacity);

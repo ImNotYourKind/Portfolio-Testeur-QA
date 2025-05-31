@@ -293,6 +293,8 @@ html {
     position: relative;
     z-index: 1;
     border: 5px solid #ffffff;
+    height: auto;
+    aspect-ratio: 3/4; /* Ratio approximatif pour 240x320 */
 }
 
 .imageAboutPage:hover {

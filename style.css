@@ -367,9 +367,18 @@ html {
     filter: grayscale(50%);
 }
 
-.skillsText img:hover {
+.skillsText:hover img {
     filter: grayscale(0%);
     transform: scale(1.05);
+}
+
+.skillsText {
+    transition: all 0.3s ease;
+}
+
+.skillsText:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .skill-item {
@@ -462,6 +471,16 @@ html {
     border-color: #8a8a8a !important;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet de survol sur les cartes de portfolio */
+.portfolioContent {
+    transition: all 0.3s ease;
+}
+
+.portfolioContent:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .skill-item:hover {
@@ -622,6 +641,13 @@ a.btn.button-link {
 .row .contactElement {
     margin-right: 200px;
 }
+.contact-title {
+    margin-bottom: 60px; /* Augmente l'espace entre le titre et les icônes */
+    font-size: 2.5rem; /* Taille de police correspondant aux autres titres de section */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .contactColumn {
     display: flex;
     flex-direction: column;
@@ -704,6 +730,10 @@ section h2:hover::after {
 .email-link {
     text-decoration: none;
     color: inherit;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #000000ae;
 }
 
 /* Responsive Design */

@@ -1,11 +1,11 @@
-// Function to handle scroll effects: navbar changes, active section, and background opacity
+// Fonction pour gérer les effets de défilement : changements de la barre de navigation, section active et opacité du fond
 function handleScrollEffects() {
     const header = document.querySelector(".navbar");
     const sections = document.querySelectorAll("section");
     const navItems = document.querySelectorAll(".nav-item");
     const footer = document.querySelector("footer#contact");
     
-    // Add footer to sections for animation purposes
+    // Ajouter le footer aux sections pour les besoins d'animation
     const allSections = [...sections];
     if (footer) allSections.push(footer);
 
@@ -14,57 +14,63 @@ function handleScrollEffects() {
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
         
-        // Change navbar color on scroll
+        // Changer la couleur de la barre de navigation lors du défilement
         if (top >= 100) {
             header.classList.add("navbarScroll");
         } else {
             header.classList.remove("navbarScroll");
         }
 
-        // Highlight active section in navbar and animate backgrounds
+        // Mettre en surbrillance la section active dans la barre de navigation et animer les arrière-plans
         let currentSection = '';
         
-        // Loop through all sections to handle background opacity and active nav
+        // Parcourir toutes les sections pour gérer l'opacité de l'arrière-plan et la navigation active
         allSections.forEach(section => {
             const sectionId = section.getAttribute('id');
             const sectionTop = section.offsetTop - windowHeight/2;
             const sectionBottom = sectionTop + section.offsetHeight + windowHeight/2;
             const sectionHeight = sectionBottom - sectionTop;
             
-            // Calculate how far into the section we've scrolled (0 to 1)
+            // Calculer à quel point nous avons défilé dans la section (de 0 à 1)
             let scrollProgress = 0;
             
             if (top < sectionTop) {
-                // Before the section
+                // Avant la section
                 scrollProgress = 0;
             } else if (top > sectionBottom) {
-                // After the section
+                // Après la section
                 scrollProgress = 0;
             } else {
-                // Inside the viewing range of the section
+                // À l'intérieur de la plage de visualisation de la section
                 scrollProgress = (top - sectionTop) / sectionHeight;
                 
-                // Make it peak in the middle (bell curve)
+                // Faire culminer au milieu (courbe en cloche)
                 scrollProgress = 1 - Math.abs((scrollProgress - 0.5) * 2);
-                scrollProgress = Math.pow(scrollProgress, 1.5); // Adjust curve
+                scrollProgress = Math.pow(scrollProgress, 1.5); // Ajuster la courbe
                 
-                // Set as current section for navbar
+                // Définir comme section actuelle pour la barre de navigation
                 if (top >= section.offsetTop - 100 && 
                     top < section.offsetTop + section.offsetHeight - 100) {
                     currentSection = sectionId;
                 }
             }
             
-            // Apply opacity to the background
+            // Appliquer l'opacité à l'arrière-plan
             const beforeElement = section.querySelector(':scope > :first-child');
-            if (beforeElement && section.id !== 'home') { // Don't animate home section
-                // Target opacity ranges from 0.1 to 0.8 based on scrollProgress
+            if (beforeElement && section.id !== 'home') { // Ne pas animer la section d'accueil
+                // L'opacité cible varie de 0,1 à 0,8 en fonction de la progression du défilement
                 const targetOpacity = 0.1 + (scrollProgress * 0.7);
                 section.style.setProperty('--bg-opacity', targetOpacity);
             }
         });
         
-        // Update active navigation item
+        // Détection spéciale pour la section contact (footer)
+        // Si on est proche du bas de la page, activer la section contact
+        if (top + windowHeight >= documentHeight - 50) {
+            currentSection = 'contact';
+        }
+        
+        // Mettre à jour l'élément de navigation actif
         navItems.forEach(item => {
             item.classList.remove('active');
             const navLink = item.querySelector('.nav-link');
@@ -75,7 +81,7 @@ function handleScrollEffects() {
     };
 }
 
-// Function to handle navbar collapse on small devices after a click
+// Fonction pour gérer la réduction de la barre de navigation sur les petits appareils après un clic
 function handleNavbarCollapse() {
     const navLinks = document.querySelectorAll(".nav-item");
     const menuToggle = document.getElementById("navbarSupportedContent");
@@ -87,13 +93,13 @@ function handleNavbarCollapse() {
     });
 }
 
-// Function to dynamically create HTML elements from the JSON file
+// Fonction pour créer dynamiquement des éléments HTML à partir du fichier JSON
 function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
     let row = document.createElement("div");
     row.classList.add("row");
 
-    // Load the JSON file
+    // Charger le fichier JSON
     fetch("./data/skills.json")
         .then((response) => response.json())
         .then((data) => {
@@ -123,13 +129,13 @@ function createSkillsFromJSON() {
             });
         });
 }
-// Function to dynamically create HTML elements from the JSON file
+// Fonction pour créer dynamiquement des éléments HTML à partir du fichier JSON
 function createPortfolioFromJSON() {
     const container = document.querySelector("#portfolio .container");
     let row = document.createElement("div");
     row.classList.add("row");
 
-    // Load the JSON file
+    // Charger le fichier JSON
     fetch("./data/portfolio.json")
         .then((response) => response.json())
         .then((data) => {
@@ -170,7 +176,7 @@ function createPortfolioFromJSON() {
         });
 }
 
-// Call the functions to execute the code
+// Appeler les fonctions pour exécuter le code
 handleScrollEffects();
 handleNavbarCollapse();
 createSkillsFromJSON();

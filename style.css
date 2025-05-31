@@ -284,8 +284,8 @@ html {
 }
 
 .imageAboutPage {
-    width: 100%;
-    max-width: 320px;
+    width: 240px;
+    height: 320px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
@@ -293,8 +293,8 @@ html {
     position: relative;
     z-index: 1;
     border: 5px solid #ffffff;
-    height: auto;
-    aspect-ratio: 3/4; /* Ratio approximatif pour 240x320 */
+    object-fit: cover; /* Maintient le ratio tout en couvrant l'espace */
+    display: block; /* Évite les espaces blancs sous l'image */
 }
 
 .imageAboutPage:hover {

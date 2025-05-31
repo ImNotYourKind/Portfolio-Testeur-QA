@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imnotyourkind.github.io/Portfolio-Testeur-QA/sitemap.xml

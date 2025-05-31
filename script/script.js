@@ -151,7 +151,7 @@ function createPortfolioFromJSON() {
                         <ul class= " custom-list mt-3">${missionsList}</ul>
                          
                         <div class="text-center">
-                            <a href="${item.link}" target="_blank" class="btn button-link">Documents</a>
+                            <a href="${item.link}" target="_blank" class="btn button-link">Lien</a>
                         </div>
                     </div>
                 </div>

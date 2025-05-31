@@ -149,18 +149,16 @@ function createPortfolioFromJSON() {
                 });
                 
                 card.innerHTML = `
-                    <div class="card portfolioContent">
-                    <img class="card-img card-img-top" src="images/${item.image}" alt="image du projet ${item.title}" width="800" height="600" loading="lazy">
-                    <div class="card-body">
-                        <h3 class="card-title">${item.title}</h3>
-                        <p class="card-text card-description">${item.text}</p>
-                        <ul class= " custom-list mt-3">${missionsList}</ul>
-                         
-                        <div class="text-center">
-                            <a href="${item.link}" target="_blank" class="btn button-link">Lien</a>
+                    <a href="${item.link}" target="_blank" class="card-link">
+                        <div class="card portfolioContent">
+                            <img class="card-img card-img-top" src="images/${item.image}" alt="image du projet ${item.title}" width="800" height="600" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="card-title">${item.title}</h3>
+                                <p class="card-text card-description">${item.text}</p>
+                                <ul class= " custom-list mt-3">${missionsList}</ul>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </a>
                 `;
 
                 // Append the card to the current row

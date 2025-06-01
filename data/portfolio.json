@@ -89,11 +89,11 @@
         "text": "Développement d’une interface web dynamique.",
         "missions":[
             {
-              "description": "Manipulation du DOM avec JavaScript vanille pour afficher dynamiquement les projets en fonction des interactions."
+              "description": "Manipulation du DOM avec JavaScript pour afficher dynamiquement les projets."
             },
             {
               
-              "description": "Gestion des événements utilisateurs (clics, filtres, formulaires, drag & drop) pour créer une expérience fluide."
+              "description": "Gestion des événements utilisateurs (clics, filtres, formulaires) pour créer une expérience fluide."
             },
             {
              

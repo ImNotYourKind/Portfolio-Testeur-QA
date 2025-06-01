@@ -373,7 +373,7 @@ h2:hover::after {
     height: 120px;
     object-fit: contain;
     transition: all 0.3s ease;
-    filter: grayscale(70%);
+    filter: grayscale(80%);
 }
 
 .skillsText:hover img {
@@ -552,6 +552,17 @@ h2:hover::after {
 
 #portfolio {
     --bg-opacity: 0.2;
+}
+
+#portfolio .card-img,
+#portfolio .card-img-top {
+    filter: grayscale(80%);
+    transition: filter 0.3s;
+}
+
+#portfolio .card:hover .card-img,
+#portfolio .card:hover .card-img-top {
+    filter: grayscale(0%);
 }
 
 #portfolio::before {

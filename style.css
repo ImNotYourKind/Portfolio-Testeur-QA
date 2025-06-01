@@ -170,6 +170,14 @@ html {
     left: 0;
 }
 
+.hero_desc::after,
+.hero_desc:hover::after,
+h2::after,
+h2:hover::after {
+    content: none !important;
+    display: none !important;
+}
+
 .hero_desc {
     color: #666666;
     font-size: 1.4rem;

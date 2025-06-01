@@ -1,4 +1,4 @@
-// Fonction pour gérer les effets de défilement : changements de la barre de navigation, section active et opacité du fond
+// Fonction pour gérer les effets de défilement : changements de la barre de navigation et section active
 function handleScrollEffects() {
     const header = document.querySelector(".navbar");
     const sections = document.querySelectorAll("section");
@@ -14,53 +14,14 @@ function handleScrollEffects() {
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
         
-        // Changer la couleur de la barre de navigation lors du défilement
-        if (top >= 100) {
-            header.classList.add("navbarScroll");
-        } else {
-            header.classList.remove("navbarScroll");
-        }
-
-        // Mettre en surbrillance la section active dans la barre de navigation et animer les arrière-plans
-        let currentSection = '';
-        
-        // Parcourir toutes les sections pour gérer l'opacité de l'arrière-plan et la navigation active
+        // Parcourir toutes les sections pour gérer la navigation active
         allSections.forEach(section => {
             const sectionId = section.getAttribute('id');
-            const sectionTop = section.offsetTop - windowHeight/2;
-            const sectionBottom = sectionTop + section.offsetHeight + windowHeight/2;
-            const sectionHeight = sectionBottom - sectionTop;
             
-            // Calculer à quel point nous avons défilé dans la section (de 0 à 1)
-            let scrollProgress = 0;
-            
-            if (top < sectionTop) {
-                // Avant la section
-                scrollProgress = 0;
-            } else if (top > sectionBottom) {
-                // Après la section
-                scrollProgress = 0;
-            } else {
-                // À l'intérieur de la plage de visualisation de la section
-                scrollProgress = (top - sectionTop) / sectionHeight;
-                
-                // Faire culminer au milieu (courbe en cloche)
-                scrollProgress = 1 - Math.abs((scrollProgress - 0.5) * 2);
-                scrollProgress = Math.pow(scrollProgress, 1.5); // Ajuster la courbe
-                
-                // Définir comme section actuelle pour la barre de navigation
-                if (top >= section.offsetTop - 100 && 
-                    top < section.offsetTop + section.offsetHeight - 100) {
-                    currentSection = sectionId;
-                }
-            }
-            
-            // Appliquer l'opacité à l'arrière-plan
-            const beforeElement = section.querySelector(':scope > :first-child');
-            if (beforeElement && section.id !== 'home') { // Ne pas animer la section d'accueil
-                // L'opacité cible varie de 0,1 à 0,8 en fonction de la progression du défilement
-                const targetOpacity = 0.1 + (scrollProgress * 0.7);
-                section.style.setProperty('--bg-opacity', targetOpacity);
+            // Mettre en surbrillance la section active dans la barre de navigation
+            if (top >= section.offsetTop - 100 && 
+                top < section.offsetTop + section.offsetHeight - 100) {
+                currentSection = sectionId;
             }
         });
         

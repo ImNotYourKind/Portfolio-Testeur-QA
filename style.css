@@ -243,7 +243,7 @@ h2:hover::after {
 }
 
 #about {
-    --bg-opacity: 0.1;
+    --bg-opacity: 0.5;
 }
 
 #about::before {
@@ -327,7 +327,7 @@ h2:hover::after {
 }
 
 #skills {
-    --bg-opacity: 0.1;
+    --bg-opacity: 0.5;
 }
 
 #skills::before {
@@ -551,7 +551,7 @@ h2:hover::after {
 }
 
 #portfolio {
-    --bg-opacity: 0.1;
+    --bg-opacity: 0.2;
 }
 
 #portfolio::before {
@@ -634,7 +634,7 @@ a.btn.button-link {
 }
 
 #contact {
-    --bg-opacity: 0.1;
+    --bg-opacity: 0.2;
 }
 
 #contact::before {
